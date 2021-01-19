@@ -20,12 +20,6 @@ database = databases.Database(db_uri)
 client = Elasticsearch()
 
 
-@app.get("/item/{id}", response_model=Post, status_code=200)
-async def get_post(id: int):
-    query = posts_table.select().where(posts_table.c.id == id)
-    return await database.fetch_one(query=query)
-
-
 def return_query(some_query):
     response = client.search(
         index="posts",
