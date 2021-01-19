@@ -8,7 +8,7 @@ connection = sqlite3.connect('csv.db')
 cursor = connection.cursor()
 
 
-with open('/home/alisher/Загрузки/posts.csv', 'r') as csv_file:
+with open('posts.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     next(csv_reader)
     for row in csv_reader:
