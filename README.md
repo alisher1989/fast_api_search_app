@@ -13,6 +13,8 @@ search using elasticsearch FastApi app
       5) cd elasticsearch-7.10.2/
       6) bin/elasticsearch
       
+      
+В другом окне терминала   
 3) git clone https://github.com/alisher1989/fast_api_search_app.git 
 
 4) cd fast_api_search_app/
